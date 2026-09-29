@@ -34,7 +34,7 @@
         The result of the operation is not 0
 
 3. add3.asm ()
-    # First Operation: [Adding 65536 + 1]
+    ### First Operation: [Adding 65536 + 1]
 
     Overflow Flag - 0
         Signed interpretation is valid (-1 + 1 = 0)
@@ -49,7 +49,7 @@
     Zero Flag - 1
         The result of the operation is 0
 
-    # Second Operation: [AX + 0 + CF] = [0 + 0 + 1 = 1]
+    ### Second Operation: [AX + 0 + CF] = [0 + 0 + 1 = 1]
 
     Overflow Flag - 0
         No signed overflow over bit 15
@@ -100,7 +100,7 @@
         The result of the operation is  not 0
 
 3. sub3.asm ()
-    # First Operation [0 - 1]
+    ### First Operation [0 - 1]
 
     Overflow Flag - 0
         The signed interpretation is valid
@@ -116,7 +116,7 @@
         The result of the operation is 0
 
 
-    # Second Operation [AX - 0 - CF]
+    ### Second Operation [AX - 0 - CF]
 
     Overflow Flag - 0
         The signed result is valid
