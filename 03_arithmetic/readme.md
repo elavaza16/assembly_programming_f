@@ -34,10 +34,35 @@
         The result of the operation is not 0
 
 3. add3.asm ()
+    # First Operation: [Adding 65536 + 1]
 
+    Overflow Flag - 0
+        Signed interpretation is valid (-1 + 1 = 0)
+    Sign Flag - 0
+        Most significant bit is 0
+    Auxiliary Carry Flag - 1
+        There is a carry from the lower nibble to the upper nibble
+    Parity Flag - 1
+        The result contains 0 set bits (no. of 1s is even)
+    Carry Flag - 1
+        The result of the operation exceeds 16 bits, hence a carry out of bit 15
+    Zero Flag - 1
+        The result of the operation is 0
 
+    # Second Operation: [AX + 0 + CF] = [0 + 0 + 1 = 1]
 
-        TO BE UNDERSTOOD
+    Overflow Flag - 0
+        No signed overflow over bit 15
+    Sign Flag - 0
+        The most significant bit is 0
+    Auxiliary Carry Flag - 0
+        No carry exists from the lower nibble to the upper nibble
+    Parity Flag - 0
+        The result contains 1 set bit (no. of 1s is odd)
+    Carry Flag - 0
+        The operation clears Carry Flag as result fits without overflow
+    Zero Flag - 0
+        The result of the operation is not 0
 
 
 
@@ -75,9 +100,36 @@
         The result of the operation is  not 0
 
 3. sub3.asm ()
+    # First Operation [0 - 1]
+
+    Overflow Flag - 0
+        The signed interpretation is valid
+    Sign Flag - 1
+        The most significant bit is 1 (the result is negative)
+    Auxiliary Carry Flag - 1
+        There was a borrow from the upper nibble to the lower nibble
+    Parity Flag - 1
+        The result contains 8 set bits (no. of 1s is even)
+    Carry Flag - 1
+        0 is smaller than 1, a higher bit was borrowed to complete the operation
+    Zero Flag - 0
+        The result of the operation is 0
 
 
-        TO BE UNDERSTOOD
+    # Second Operation [AX - 0 - CF]
+
+    Overflow Flag - 0
+        The signed result is valid
+    Sign Flag - 1
+        The most significant bit is 1 (the result is negative)
+    Auxiliary Carry Flag - 0
+        There was no borrow from the upper nibble to the lower nibble
+    Parity Flag - 0
+        The result contains 7 set bits (no. of 1s is odd)
+    Carry Flag - 0
+        The opertaion did not require a borrow from beyong bit 15
+    Zero Flag - 0
+        The result of the operation is not 0
 
 
 
