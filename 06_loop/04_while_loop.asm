@@ -42,3 +42,5 @@ check_condition:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+# PRINTS NUMBERS 1 TO 5 USING A WHILE-LIKE LOOP

@@ -24,3 +24,5 @@ repeat:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+# PRINTS "HELLO, ASSEMBLY!" 5 TIMES USING THE LOOP INSTRUCTION

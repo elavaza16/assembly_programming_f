@@ -5,6 +5,7 @@ section .data
 section .text
     global _start
 
+_start: #added to indicate start of infinite loop program
 repeat:
     ; Print message
     mov rax, 1
@@ -14,3 +15,5 @@ repeat:
     syscall
 
     jmp repeat                 ; Jump back unconditionally
+
+# INFINITE LOOP THAT PRINTS "RUNNING..." CONTINUOUSLY

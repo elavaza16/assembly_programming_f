@@ -23,4 +23,5 @@ repeat:
     xor rdi, rdi
     syscall
 
-    
+
+# LOOPS HELLO ASSEMBLY ITERATIVELY (NON-STOP)

@@ -57,3 +57,6 @@ sum_loop:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+# CALCULATES AND PRINTS THE SUM OF NUMBERS 1 TO 5
+# OUTPUT = 15 (1+2+3+4+5)
