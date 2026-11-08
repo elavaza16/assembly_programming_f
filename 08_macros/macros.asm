@@ -33,3 +33,6 @@ _start:
     xor edi, edi
     syscall
 
+
+; start ...
+; stop ...

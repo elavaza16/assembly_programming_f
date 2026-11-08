@@ -27,3 +27,8 @@ _start:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+
+; Welcome to Assembly!
+; Learning NASM macros.
+; One macro, multiple messages.    

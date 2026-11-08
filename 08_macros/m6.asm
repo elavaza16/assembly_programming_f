@@ -23,3 +23,6 @@ _start:
     PRINT msg, len
 
     EXIT_PROGRAM 0
+
+
+; Program completed successfully.

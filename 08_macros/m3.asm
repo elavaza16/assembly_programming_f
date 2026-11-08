@@ -43,3 +43,8 @@ _start:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+
+; Number is zero.
+; Number is not zero.
+; Number is not zero.
