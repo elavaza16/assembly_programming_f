@@ -53,3 +53,6 @@ _start:
     mov eax, 60
     xor edi, edi
     syscall
+
+
+; #prompts user for a character, and displays that character

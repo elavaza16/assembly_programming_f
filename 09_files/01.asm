@@ -48,3 +48,6 @@ _start:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+
+; # Prompts user for name and prints Hello {name}

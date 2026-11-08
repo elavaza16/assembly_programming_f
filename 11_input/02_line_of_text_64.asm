@@ -45,3 +45,7 @@ _start:
     mov eax, 60
     xor edi, edi
     syscall
+
+
+
+; prompts user to enter a line of text and displays the line of text entered

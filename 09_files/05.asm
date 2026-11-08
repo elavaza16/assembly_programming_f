@@ -115,3 +115,8 @@ _start:
     mov rax, 60
     mov rdi, 1
     syscall
+
+
+
+; prints --- Reading File Contents ---
+;        Appended log entry.

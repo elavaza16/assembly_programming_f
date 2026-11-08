@@ -48,3 +48,6 @@ _start:
     xor ebx, ebx
     mov eax, 1
     int 0x80
+
+
+; # Prompts user for name and prints Hello {name}
